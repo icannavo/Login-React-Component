@@ -1,0 +1,160 @@
+// src/component/ComponenteCSS/Login.scss
+
+#login {
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-row {
+    margin-bottom: 1rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .password-container {
+    position: relative;
+  }
+
+  .password-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .password-toggle-icon {
+      position: absolute;
+      right: 10px;
+      cursor: pointer;
+      color: #007bff;
+    }
+  }
+
+  .error {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+
+    &:disabled {
+      background-color: #d6d6d6;
+      cursor: not-allowed;
+    }
+  }
+
+  .custom-captcha {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 0.5rem;
+    background-color: #fff;
+
+    .captcha-checkbox {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #ced4da;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+
+      &.checked {
+        background-color: #42a40d00;
+        border-color: #2b8d2dcc;
+      }
+
+      .checkmark {
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+
+    .captcha-text {
+      flex: 1;
+    }
+
+    .captcha-icon {
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+
+      img {
+        width: 57px;
+        height: auto;
+        margin-left: -26px;
+        margin-top: -18px;
+      }
+    }
+  }
+
+  .forgot-password {
+    color: #007bff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .register-link {
+    text-align: center;
+    margin-top: 1rem;
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .rendered-info {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    text-align: center;
+  }
+}
